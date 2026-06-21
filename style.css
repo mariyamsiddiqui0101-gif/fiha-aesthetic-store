@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
 
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
     padding:0;
@@ -12,116 +16,170 @@ body{
     background:#CF7486;
     color:white;
     text-align:center;
-    padding:12px;
-    font-size:14px;
+    padding:8px;
+    font-size:11px;
 }
 
 header{
     background:white;
-    padding:20px;
+    padding:15px 10px;
     text-align:center;
     box-shadow:0 2px 12px rgba(0,0,0,0.08);
 }
 
 .tagline{
-    font-size:18px;
+    font-size:13px;
     color:#CF7486;
-    margin-top:10px;
+    margin-top:5px;
 }
+
 
 .hero{
     text-align:center;
-    padding:40px 20px;
+    padding:25px 15px;
 }
 
 .hero h1{
     font-family:'Cormorant Garamond',serif;
-    font-size:42px;
+    font-size:32px;
     color:#CF7486;
     font-weight:600;
     line-height:1.1;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 .hero p{
-    font-size:18px;
+    font-size:14px;
     color:#7d5d67;
 }
 
+
 .search-box{
-    margin:25px auto;
+    margin:15px auto;
 }
 
 .search-box input{
-    width:80%;
-    max-width:400px;
-    padding:14px;
-    border-radius:30px;
+    width:90%;
+    padding:11px;
+    border-radius:25px;
     border:1px solid #CF7486;
-    font-size:15px;
+    font-size:13px;
 }
+
 
 .btn{
     display:inline-block;
     background:#CF7486;
     color:white;
-    padding:14px 30px;
-    border-radius:30px;
+    padding:10px 22px;
+    border-radius:25px;
     text-decoration:none;
-    font-weight:600;
-    margin-top:10px;
+    font-size:13px;
+    font-weight:500;
 }
+
 
 .btn:hover{
     background:#b85f71;
 }
 
+
 .section{
-    padding:40px 20px;
+    padding:25px 12px;
     text-align:center;
 }
 
+
 .section h2{
     font-family:'Cormorant Garamond',serif;
-    font-size:38px;
+    font-size:30px;
     color:#CF7486;
-    margin-bottom:25px;
+    margin-bottom:18px;
 }
+
 
 .product-card{
     background:white;
-    border-radius:20px;
-    padding:20px;
+    border-radius:18px;
+    padding:12px;
     margin:auto;
-    max-width:400px;
+    max-width:220px;
     box-shadow:0 3px 15px rgba(0,0,0,0.08);
 }
+
+
+.product-card img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+    border-radius:14px;
+}
+
 
 .product-card h3{
     font-family:'Cormorant Garamond',serif;
     color:#CF7486;
-    font-size:30px;
+    font-size:20px;
+    margin:8px 0;
 }
+
+
+.product-card p{
+    font-size:12px;
+    margin:5px;
+}
+
 
 .product-card button{
     background:#CF7486;
     color:white;
     border:none;
-    padding:12px 25px;
-    border-radius:25px;
+    padding:8px 18px;
+    border-radius:20px;
     cursor:pointer;
+    font-size:12px;
 }
+
 
 .product-card button:hover{
     background:#b85f71;
 }
 
+
+.bestseller-slider{
+    display:flex;
+    overflow-x:auto;
+    gap:12px;
+    padding:10px 5px;
+    scroll-behavior:smooth;
+}
+
+
+.bestseller-slider .product-card{
+    min-width:150px;
+    max-width:150px;
+    padding:10px;
+}
+
+
+.bestseller-slider .product-card img{
+    height:130px;
+}
+
+
+.bestseller-slider::-webkit-scrollbar{
+    display:none;
+}
+
+
 footer{
     background:#CF7486;
     color:white;
     text-align:center;
-    padding:25px;
+    padding:18px;
+    font-size:13px;
 }
+
 
 a{
     color:#CF7486;
@@ -131,43 +189,21 @@ a{
 a:hover{
     text-decoration:underline;
 }
-.bestseller-slider{
-display:flex;
-overflow-x:auto;
-gap:20px;
-padding:10px;
-scroll-behavior:smooth;
+
+
+/* Bigger screens ke liye thoda adjust */
+@media(min-width:768px){
+
+.hero h1{
+    font-size:45px;
 }
 
-.bestseller-slider .product-card{
-min-width:160px;
-max-width:160px;
-flex-shrink:0;
-padding:10px;
-}
-.product-card img{
-height:160px;
-object-fit:cover;
+.section h2{
+    font-size:38px;
 }
 
-.product-card h3{
-font-size:16px;
-margin:8px 0;
+.product-card{
+    max-width:300px;
 }
 
-.product-card p{
-font-size:14px;
-}
-
-.product-card button{
-font-size:12px;
-padding:8px 12px;
-}
-.bestseller-slider::-webkit-scrollbar{
-display:none;
-}
-
-.product-card img{
-width:100%;
-border-radius:15px;
 }
