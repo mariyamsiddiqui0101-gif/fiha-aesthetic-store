@@ -131,3 +131,24 @@ a{
 a:hover{
     text-decoration:underline;
 }
+.bestseller-slider{
+display:flex;
+overflow-x:auto;
+gap:20px;
+padding:10px;
+scroll-behavior:smooth;
+}
+
+.bestseller-slider .product-card{
+min-width:280px;
+flex-shrink:0;
+}
+
+.bestseller-slider::-webkit-scrollbar{
+display:none;
+}
+
+.product-card img{
+width:100%;
+border-radius:15px;
+}
