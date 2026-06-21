@@ -140,10 +140,29 @@ scroll-behavior:smooth;
 }
 
 .bestseller-slider .product-card{
-min-width:280px;
+min-width:160px;
+max-width:160px;
 flex-shrink:0;
+padding:10px;
+}
+.product-card img{
+height:160px;
+object-fit:cover;
 }
 
+.product-card h3{
+font-size:16px;
+margin:8px 0;
+}
+
+.product-card p{
+font-size:14px;
+}
+
+.product-card button{
+font-size:12px;
+padding:8px 12px;
+}
 .bestseller-slider::-webkit-scrollbar{
 display:none;
 }
